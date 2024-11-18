@@ -1,0 +1,110 @@
+.banner {
+    position: relative;
+
+    .banner-items {
+        position: relative;
+        background-color: black;
+        height: 80vh;
+        width: 100%;
+
+        img {
+            opacity: 0.6;
+        }
+
+        .banner-content {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            color: white;
+
+            .tagline {
+                font-size: 20px;
+                font-family: $general-font;
+                font-weight: 500;
+            }
+
+            .banner-heading {
+                font-size: 66px;
+                font-family: $heading-font;
+                font-weight: 700;
+            }
+
+            p {
+                font-family: $general-font;
+                font-size: 18px;
+                font-weight: 500;
+            }
+
+            .custom-btn {
+                margin-top: 20px;
+            }
+        }
+    }
+
+    .social-media {
+        position: absolute;
+        top: 50%;
+        left: 40px;
+        transform: translateY(-50%);
+        z-index: 999;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        a{
+            writing-mode: vertical-lr;
+            transform: rotate(180deg);
+            font-family: $general-font;
+            position: relative;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            &::before{
+                content: "";
+                height: 10px;
+                width: 10px;
+                border: 2px dotted white;
+                display: block;
+                border-radius: 50%;
+            }
+        }
+    }
+    .animate-plane{
+        position: absolute;
+        top: 20%;
+        left: 10%;
+        z-index: 2;
+        height: 100px;
+        width: fit-content;
+        animation: fly 5s linear  infinite ;
+    }
+}
+
+@keyframes fly {
+    0% {
+        transform: translateX(0) translateY(0%) scale(0.5);
+        opacity: 0;
+    }
+    50% {
+        transform: translateX(50%) translateY(-10px)  scale(0.8);
+        opacity: 0.8;
+    }
+    
+    100% {
+        transform: translateX(500px) translateY(-100px) scale(0.5);
+        opacity: 0;
+    }
+    
+}
+
+
+.upcomming-best-tour{
+    padding: 100px 0px;
+    background-image: url("../images/upcoming-bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+
+}

@@ -1,0 +1,44 @@
+header {
+    background-color: #3944477c;
+    padding: 20px 100px;
+    color: white;
+    font-family: $general-font;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 2;
+
+    nav {
+        ul {
+            li {
+                text-transform: uppercase;
+                font-weight: 600;
+            }
+        }
+    }
+
+    .right-content {
+        button {
+            background-color: transparent;
+            border: none;
+            height: 40px;
+            width: 40px;
+            border-radius: 50%;
+            color: white;
+            &:hover {
+                background-color: $primary-color;
+            }
+        }
+        .phone{
+            i{
+                font-size: 20px;
+            }
+            .details{
+                a{
+                    display: block;
+                }
+            }
+        }
+
+    }
+}
